@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h1>Hello, {{ user.nickname }}. Why do you drive a {{ car.make }} {{ car.model }}</h1>
+    {% for post in posts %}
+    <div><p>{{ post.author.nickname}} says: <b>{{ post.body }}</b></p></div>
+    {% endfor %}
+
+{% endblock %}
